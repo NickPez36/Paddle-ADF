@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canoe Slalom ADF Resource Hub</title>
+    <title>Paddle Australia ADF Resource Hub</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -28,7 +28,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
         
-        /* Accordion Icon Rotation */
         .rotate-180 {
             transform: rotate(180deg);
         }
@@ -43,19 +42,15 @@
          VIEW 1: LOGIN PAGE 
          ==================== -->
     <div id="login-view" class="fixed inset-0 z-50 flex items-center justify-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 47, 95, 0.9), rgba(0, 156, 180, 0.85)), url('https://images.unsplash.com/photo-1545562083-c683110ce777?q=80&w=2070&auto=format&fit=crop');">
-        
         <div class="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl flex flex-col md:flex-row overflow-hidden w-full max-w-4xl mx-4 fade-in border border-white/20">
             
-            <!-- Login Left Side (Form) -->
+            <!-- Login Left Side -->
             <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
                 <div class="mb-8 text-center md:text-left">
-                    
-                    <!-- LOGO IMPLEMENTED HERE (GITHUB RAW LINK) -->
                     <div class="flex items-center justify-center md:justify-start mb-6">
                          <img src="https://raw.githubusercontent.com/NickPez36/Paddle-ADF/main/assets/Paddle%20Aus%20Logo.png" alt="Paddle Australia Logo" class="h-16 object-contain">
                     </div>
-                    
-                    <h1 class="text-xl font-bold text-paddleNavy">Canoe Slalom ADF Hub</h1>
+                    <h1 class="text-xl font-bold text-paddleNavy">ADF Resource Hub</h1>
                     <p class="text-gray-500 text-sm mt-2">Please log in to access resources.</p>
                 </div>
 
@@ -63,76 +58,95 @@
                     <div id="login-error" class="hidden bg-red-50 text-red-600 p-3 rounded-lg text-sm border border-red-200 flex items-center">
                         <i class="fa-solid fa-circle-exclamation mr-2"></i> Invalid username or password.
                     </div>
-
                     <div>
                         <label class="block text-sm font-bold text-paddleNavy mb-1">Username</label>
-                        <div class="relative">
-                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                <i class="fa-solid fa-user text-gray-400"></i>
-                            </div>
-                            <input id="username" type="text" class="pl-10 w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-paddleTeal focus:border-paddleTeal outline-none transition" placeholder="Enter username">
-                        </div>
+                        <input id="username" type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-paddleTeal outline-none" placeholder="Enter username">
                     </div>
-
                     <div>
                         <label class="block text-sm font-bold text-paddleNavy mb-1">Password</label>
-                        <div class="relative">
-                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                <i class="fa-solid fa-lock text-gray-400"></i>
-                            </div>
-                            <input id="password" type="password" class="pl-10 w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-paddleTeal focus:border-paddleTeal outline-none transition" placeholder="••••••••">
-                        </div>
+                        <input id="password" type="password" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-paddleTeal outline-none" placeholder="••••••••">
                     </div>
-
-                    <button type="submit" class="w-full bg-paddleNavy hover:bg-blue-900 text-white font-bold py-3 rounded-lg transition duration-300 transform hover:scale-[1.01] shadow-lg mt-4">
+                    <button type="submit" class="w-full bg-paddleNavy hover:bg-blue-900 text-white font-bold py-3 rounded-lg transition shadow-lg mt-4">
                         Log In
                     </button>
                 </form>
             </div>
 
-            <!-- Login Right Side (Branding Panel) -->
+            <!-- Login Right Side -->
             <div class="hidden md:flex w-1/2 bg-paddleNavy flex-col items-center justify-center p-8 text-white text-center relative overflow-hidden">
                 <div class="absolute top-0 right-0 -mr-10 -mt-10 w-40 h-40 rounded-full bg-paddleTeal opacity-20"></div>
-                <div class="absolute bottom-0 left-0 -ml-10 -mb-10 w-40 h-40 rounded-full bg-paddleTeal opacity-20"></div>
-                
                 <div class="relative z-10">
-                    <h2 class="text-3xl font-bold mb-4">Athlete Development Framework</h2>
+                    <h2 class="text-3xl font-bold mb-4">One Team, One Dream</h2>
                     <div class="w-16 h-1 bg-paddleTeal mx-auto mb-6 rounded-full"></div>
-                    <ul class="text-left space-y-4 text-blue-100 mx-auto max-w-xs text-lg">
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-paddleTeal mr-3"></i> Play and Paddle Well</li>
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-paddleTeal mr-3"></i> Paddle to Develop</li>
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-paddleTeal mr-3"></i> Paddle to Compete</li>
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-paddleTeal mr-3"></i> Paddle to Win</li>
-                    </ul>
+                    <p class="text-blue-100 max-w-xs mx-auto">Welcome to the central hub for Athlete Development Framework resources across all disciplines.</p>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- ==================== 
-         VIEW 2: DASHBOARD 
+         VIEW 2: HUB SELECTION (NEW)
          ==================== -->
-    <div id="dashboard-view" class="hidden min-h-screen flex flex-col bg-slate-50">
-        
+    <div id="hub-selection-view" class="hidden min-h-screen flex flex-col items-center justify-center bg-slate-50 p-4">
+        <div class="max-w-6xl w-full text-center fade-in">
+            <img src="https://raw.githubusercontent.com/NickPez36/Paddle-ADF/main/assets/Paddle%20Aus%20Logo.png" alt="Logo" class="h-20 mx-auto mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-paddleNavy mb-4">Select Your Hub</h1>
+            <p class="text-slate-500 mb-12">Choose your discipline to access specific resources.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: Slalom -->
+                <div onclick="openDashboard('slalom')" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-slate-200 group">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-paddleNavy transition-colors">
+                        <i class="fa-solid fa-water text-3xl text-paddleNavy group-hover:text-white"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-paddleNavy mb-2">Canoe Slalom</h2>
+                    <p class="text-slate-400 text-sm">Access Slalom specific ADF documents, videos, and webinars.</p>
+                </div>
+
+                <!-- Card 2: Sprint -->
+                <div onclick="openDashboard('sprint')" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-slate-200 group">
+                    <div class="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-paddleTeal transition-colors">
+                        <i class="fa-solid fa-stopwatch text-3xl text-paddleTeal group-hover:text-white"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-paddleNavy mb-2">Canoe Sprint</h2>
+                    <p class="text-slate-400 text-sm">Access Sprint specific ADF documents, videos, and webinars.</p>
+                </div>
+
+                <!-- Card 3: Para Canoe -->
+                <div onclick="openDashboard('para')" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-slate-200 group">
+                    <div class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-orange-500 transition-colors">
+                        <i class="fa-brands fa-accessible-icon text-3xl text-orange-500 group-hover:text-white"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-paddleNavy mb-2">Para Canoe</h2>
+                    <p class="text-slate-400 text-sm">Access Para Canoe specific ADF documents, videos, and webinars.</p>
+                </div>
+            </div>
+            
+            <button onclick="handleLogout()" class="mt-12 text-slate-400 hover:text-red-500 text-sm font-medium">
+                <i class="fa-solid fa-arrow-left mr-2"></i> Log Out
+            </button>
+        </div>
+    </div>
+
+    <!-- ==================== 
+         VIEW 3: SLALOM DASHBOARD
+         ==================== -->
+    <div id="dashboard-slalom" class="hidden min-h-screen flex flex-col bg-slate-50">
         <!-- Navbar -->
         <nav class="bg-white shadow-md sticky top-0 z-40 border-b border-gray-200">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-20">
                     <div class="flex items-center">
-                        <div class="flex-shrink-0 flex items-center">
-                            <!-- LOGO IN NAVBAR (GITHUB RAW LINK) -->
-                            <img src="https://raw.githubusercontent.com/NickPez36/Paddle-ADF/main/assets/Paddle%20Aus%20Logo.png" alt="Paddle Australia Logo" class="h-12 mr-4">
-                            <div class="flex flex-col border-l-2 border-gray-200 pl-4">
-                                <span class="font-bold text-paddleNavy text-lg leading-tight">Canoe Slalom</span>
-                                <span class="text-sm text-paddleTeal font-medium tracking-wide">ADF Resource Hub</span>
-                            </div>
+                        <img src="https://raw.githubusercontent.com/NickPez36/Paddle-ADF/main/assets/Paddle%20Aus%20Logo.png" alt="Logo" class="h-12 mr-4">
+                        <div class="flex flex-col border-l-2 border-gray-200 pl-4">
+                            <span class="font-bold text-paddleNavy text-lg leading-tight">Canoe Slalom</span>
+                            <span class="text-sm text-paddleTeal font-medium tracking-wide">ADF Hub</span>
                         </div>
                     </div>
-                    <div class="flex items-center space-x-6">
-                        <div class="hidden sm:flex flex-col text-right mr-2">
-                            <span class="text-paddleNavy text-sm font-bold">Admin User</span>
-                            <span class="text-gray-500 text-xs">Paddle Australia</span>
-                        </div>
+                    <div class="flex items-center space-x-4">
+                        <button onclick="returnToHub()" class="text-paddleNavy hover:text-paddleTeal text-sm font-bold px-3 py-2 border border-slate-200 rounded-lg hover:bg-slate-50 transition">
+                            <i class="fa-solid fa-grid-2 mr-2"></i> Switch Hub
+                        </button>
                         <button onclick="handleLogout()" class="text-gray-500 hover:text-red-600 px-3 py-2 rounded-lg transition">
                             <i class="fa-solid fa-right-from-bracket text-xl"></i>
                         </button>
@@ -141,232 +155,178 @@
             </div>
         </nav>
 
-        <!-- Main Content -->
         <main class="flex-grow p-4 md:p-8 fade-in">
             <div class="max-w-7xl mx-auto space-y-6">
-                
                 <div class="text-center py-6">
-                    <h1 class="text-3xl font-bold text-paddleNavy">Resource Library</h1>
-                    <p class="text-slate-500 mt-2">Select a framework stage below to access resources.</p>
+                    <h1 class="text-3xl font-bold text-paddleNavy">Slalom Resource Library</h1>
+                    <p class="text-slate-500 mt-2">Select a framework stage below.</p>
                 </div>
 
-                <!-- =========================
-                     SECTION 1: COLLAPSIBLE
-                     ========================= -->
+                <!-- Slalom Section 1 -->
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-                    <!-- Header (Click to Toggle) -->
-                    <button onclick="toggleSection('section-1', 'icon-1')" class="w-full px-6 py-5 flex items-center justify-between bg-white hover:bg-slate-50 transition-colors text-left group">
-                        <div class="flex items-center">
-                            <div class="w-10 h-10 rounded-full bg-paddleNavy/10 flex items-center justify-center mr-4 text-paddleNavy font-bold">1</div>
-                            <h2 class="text-xl font-bold text-paddleNavy group-hover:text-paddleTeal transition-colors">Play and Paddle Well</h2>
-                        </div>
-                        <i id="icon-1" class="fa-solid fa-chevron-down text-gray-400 accordion-icon"></i>
+                    <button onclick="toggleSection('slalom-1', 'icon-s1')" class="w-full px-6 py-5 flex items-center justify-between bg-white hover:bg-slate-50 transition text-left group">
+                        <div class="flex items-center"><div class="w-10 h-10 rounded-full bg-paddleNavy/10 flex items-center justify-center mr-4 text-paddleNavy font-bold">1</div><h2 class="text-xl font-bold text-paddleNavy">Play and Paddle Well</h2></div>
+                        <i id="icon-s1" class="fa-solid fa-chevron-down text-gray-400 accordion-icon"></i>
                     </button>
-                    
-                    <!-- Content (Hidden by default) -->
-                    <div id="section-1" class="hidden border-t border-slate-100 p-6 bg-slate-50/50">
+                    <div id="slalom-1" class="hidden border-t border-slate-100 p-6 bg-slate-50/50">
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                            
-                            <!-- TILE 1: Webinars -->
-                            <!-- CHANGE LINK HERE: Replace '#' with your URL -->
-                            <div onclick="window.open('https://drive.google.com/file/d/1Fvynplg_juxlnAgehq1nskJ2ju7U_DW0/view?usp=sharing', '_blank')" class="cursor-pointer hover:-translate-y-1 transition-all duration-300 bg-white p-5 rounded-xl shadow-sm hover:shadow-md border border-slate-200 group border-b-4 border-b-red-600">
-                                <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-red-600 transition-colors">
-                                    <i class="fa-solid fa-video text-red-600 group-hover:text-white transition-colors"></i>
-                                </div>
+                            <!-- User Updated Links -->
+                            <div onclick="window.open('https://drive.google.com/file/d/1Fvynplg_juxlnAgehq1nskJ2ju7U_DW0/view?usp=sharing', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group border-b-4 border-b-red-600">
+                                <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-video text-red-600"></i></div>
                                 <h3 class="font-bold text-slate-800 text-sm">Webinars</h3>
                                 <p class="text-xs text-slate-400 mt-1">Foundational Discussions for Life</p>
                             </div>
-
-                            <!-- TILE 2: Docs -->
-                            <!-- CHANGE LINK HERE -->
-                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition-all duration-300 bg-white p-5 rounded-xl shadow-sm hover:shadow-md border border-slate-200 group">
-                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-blue-600 transition-colors">
-                                    <i class="fa-solid fa-book-open text-blue-600 group-hover:text-white transition-colors"></i>
-                                </div>
+                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group">
+                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-book-open text-blue-600"></i></div>
                                 <h3 class="font-bold text-slate-800 text-sm">Training & Learning Docs</h3>
                             </div>
-
-                            <!-- TILE 3: Videos (Active Link) -->
-                            <!-- THIS LINK IS ALREADY SET -->
-                            <div onclick="window.open('https://drive.google.com/drive/folders/1L7suqoRAd6XcsROCFj0ukaTRmALZmopG?usp=drive_link', '_blank')" class="cursor-pointer hover:-translate-y-1 transition-all duration-300 bg-white p-5 rounded-xl shadow-sm hover:shadow-md border border-slate-200 group border-b-4 border-b-paddleTeal">
-                                <div class="w-10 h-10 bg-paddleTeal/20 rounded-lg flex items-center justify-center mb-3 group-hover:bg-paddleTeal transition-colors">
-                                    <i class="fa-solid fa-film text-paddleTeal group-hover:text-white transition-colors"></i>
-                                </div>
+                            <div onclick="window.open('https://drive.google.com/drive/folders/1L7suqoRAd6XcsROCFj0ukaTRmALZmopG?usp=drive_link', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group border-b-4 border-b-paddleTeal">
+                                <div class="w-10 h-10 bg-paddleTeal/20 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-film text-paddleTeal"></i></div>
                                 <h3 class="font-bold text-slate-800 text-sm">Training & Technical Videos</h3>
                                 <p class="text-xs text-slate-400 mt-1">Technical Examples for Practice</p>
                             </div>
+                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group">
+                                <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-circle-exclamation text-orange-600"></i></div>
+                                <h3 class="font-bold text-slate-800 text-sm">Important Documentation</h3>
+                            </div>
+                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group">
+                                <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-trophy text-purple-600"></i></div>
+                                <h3 class="font-bold text-slate-800 text-sm">Detailed ADF</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- =========================
-                     SECTION 2: COLLAPSIBLE
-                     ========================= -->
+                <!-- Slalom Section 2 -->
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-                    <button onclick="toggleSection('section-2', 'icon-2')" class="w-full px-6 py-5 flex items-center justify-between bg-white hover:bg-slate-50 transition-colors text-left group">
-                        <div class="flex items-center">
-                            <div class="w-10 h-10 rounded-full bg-paddleNavy/10 flex items-center justify-center mr-4 text-paddleNavy font-bold">2</div>
-                            <h2 class="text-xl font-bold text-paddleNavy group-hover:text-paddleTeal transition-colors">Paddle to Develop</h2>
-                        </div>
-                        <i id="icon-2" class="fa-solid fa-chevron-down text-gray-400 accordion-icon"></i>
+                    <button onclick="toggleSection('slalom-2', 'icon-s2')" class="w-full px-6 py-5 flex items-center justify-between bg-white hover:bg-slate-50 transition text-left group">
+                        <div class="flex items-center"><div class="w-10 h-10 rounded-full bg-paddleNavy/10 flex items-center justify-center mr-4 text-paddleNavy font-bold">2</div><h2 class="text-xl font-bold text-paddleNavy">Paddle to Develop</h2></div>
+                        <i id="icon-s2" class="fa-solid fa-chevron-down text-gray-400 accordion-icon"></i>
                     </button>
-                    
-                    <div id="section-2" class="hidden border-t border-slate-100 p-6 bg-slate-50/50">
+                    <div id="slalom-2" class="hidden border-t border-slate-100 p-6 bg-slate-50/50">
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                            <!-- TILE 1 -->
-                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition-all duration-300 bg-white p-5 rounded-xl shadow-sm hover:shadow-md border border-slate-200 group">
-                                <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-red-600 transition-colors">
-                                    <i class="fa-solid fa-video text-red-600 group-hover:text-white transition-colors"></i>
-                                </div>
-                                <h3 class="font-bold text-slate-800 text-sm">Webinars</h3>
-                            </div>
-                            <!-- TILE 2 -->
-                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition-all duration-300 bg-white p-5 rounded-xl shadow-sm hover:shadow-md border border-slate-200 group">
-                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-blue-600 transition-colors">
-                                    <i class="fa-solid fa-book-open text-blue-600 group-hover:text-white transition-colors"></i>
-                                </div>
-                                <h3 class="font-bold text-slate-800 text-sm">Training & Learning Docs</h3>
-                            </div>
-                            <!-- TILE 3 (Active) -->
-                            <div onclick="window.open('https://drive.google.com/drive/folders/1L7suqoRAd6XcsROCFj0ukaTRmALZmopG?usp=drive_link', '_blank')" class="cursor-pointer hover:-translate-y-1 transition-all duration-300 bg-white p-5 rounded-xl shadow-sm hover:shadow-md border border-slate-200 group border-b-4 border-b-paddleTeal">
-                                <div class="w-10 h-10 bg-paddleTeal/20 rounded-lg flex items-center justify-center mb-3 group-hover:bg-paddleTeal transition-colors">
-                                    <i class="fa-solid fa-film text-paddleTeal group-hover:text-white transition-colors"></i>
-                                </div>
+                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group"><div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-video text-red-600"></i></div><h3 class="font-bold text-slate-800 text-sm">Webinars</h3></div>
+                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group"><div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-book-open text-blue-600"></i></div><h3 class="font-bold text-slate-800 text-sm">Training & Learning Docs</h3></div>
+                            <div onclick="window.open('https://drive.google.com/drive/folders/1L7suqoRAd6XcsROCFj0ukaTRmALZmopG?usp=drive_link', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group border-b-4 border-b-paddleTeal">
+                                <div class="w-10 h-10 bg-paddleTeal/20 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-film text-paddleTeal"></i></div>
                                 <h3 class="font-bold text-slate-800 text-sm">Training & Technical Videos</h3>
                                 <p class="text-xs text-slate-400 mt-1">Technical Examples for Practice</p>
                             </div>
-                            <!-- TILE 4 -->
-                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition-all duration-300 bg-white p-5 rounded-xl shadow-sm hover:shadow-md border border-slate-200 group">
-                                <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-orange-600 transition-colors">
-                                    <i class="fa-solid fa-circle-exclamation text-orange-600 group-hover:text-white transition-colors"></i>
-                                </div>
-                                <h3 class="font-bold text-slate-800 text-sm">Important Documentation</h3>
-                            </div>
-                            <!-- TILE 5 -->
-                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition-all duration-300 bg-white p-5 rounded-xl shadow-sm hover:shadow-md border border-slate-200 group">
-                                <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-purple-600 transition-colors">
-                                    <i class="fa-solid fa-trophy text-purple-600 group-hover:text-white transition-colors"></i>
-                                </div>
-                                <h3 class="font-bold text-slate-800 text-sm">Detailed ADF</h3>
-                            </div>
+                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group"><div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-circle-exclamation text-orange-600"></i></div><h3 class="font-bold text-slate-800 text-sm">Important Documentation</h3></div>
+                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group"><div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-trophy text-purple-600"></i></div><h3 class="font-bold text-slate-800 text-sm">Detailed ADF</h3></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- =========================
-                     SECTION 3: COLLAPSIBLE
-                     ========================= -->
+                <!-- Slalom Section 3 -->
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-                    <button onclick="toggleSection('section-3', 'icon-3')" class="w-full px-6 py-5 flex items-center justify-between bg-white hover:bg-slate-50 transition-colors text-left group">
-                        <div class="flex items-center">
-                            <div class="w-10 h-10 rounded-full bg-paddleNavy/10 flex items-center justify-center mr-4 text-paddleNavy font-bold">3</div>
-                            <h2 class="text-xl font-bold text-paddleNavy group-hover:text-paddleTeal transition-colors">Paddle to Compete</h2>
-                        </div>
-                        <i id="icon-3" class="fa-solid fa-chevron-down text-gray-400 accordion-icon"></i>
+                    <button onclick="toggleSection('slalom-3', 'icon-s3')" class="w-full px-6 py-5 flex items-center justify-between bg-white hover:bg-slate-50 transition text-left group">
+                        <div class="flex items-center"><div class="w-10 h-10 rounded-full bg-paddleNavy/10 flex items-center justify-center mr-4 text-paddleNavy font-bold">3</div><h2 class="text-xl font-bold text-paddleNavy">Paddle to Compete</h2></div>
+                        <i id="icon-s3" class="fa-solid fa-chevron-down text-gray-400 accordion-icon"></i>
                     </button>
-                    
-                    <div id="section-3" class="hidden border-t border-slate-100 p-6 bg-slate-50/50">
+                    <div id="slalom-3" class="hidden border-t border-slate-100 p-6 bg-slate-50/50">
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                             <!-- TILE 1 -->
-                             <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition-all duration-300 bg-white p-5 rounded-xl shadow-sm hover:shadow-md border border-slate-200 group">
-                                <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-red-600 transition-colors">
-                                    <i class="fa-solid fa-video text-red-600 group-hover:text-white transition-colors"></i>
-                                </div>
-                                <h3 class="font-bold text-slate-800 text-sm">Webinars</h3>
-                            </div>
-                            <!-- TILE 2 -->
-                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition-all duration-300 bg-white p-5 rounded-xl shadow-sm hover:shadow-md border border-slate-200 group">
-                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-blue-600 transition-colors">
-                                    <i class="fa-solid fa-book-open text-blue-600 group-hover:text-white transition-colors"></i>
-                                </div>
-                                <h3 class="font-bold text-slate-800 text-sm">Training & Learning Docs</h3>
-                            </div>
-                            <!-- TILE 3 (Active) -->
-                            <div onclick="window.open('https://drive.google.com/drive/folders/1L7suqoRAd6XcsROCFj0ukaTRmALZmopG?usp=drive_link', '_blank')" class="cursor-pointer hover:-translate-y-1 transition-all duration-300 bg-white p-5 rounded-xl shadow-sm hover:shadow-md border border-slate-200 group border-b-4 border-b-paddleTeal">
-                                <div class="w-10 h-10 bg-paddleTeal/20 rounded-lg flex items-center justify-center mb-3 group-hover:bg-paddleTeal transition-colors">
-                                    <i class="fa-solid fa-film text-paddleTeal group-hover:text-white transition-colors"></i>
-                                </div>
+                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group"><div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-video text-red-600"></i></div><h3 class="font-bold text-slate-800 text-sm">Webinars</h3></div>
+                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group"><div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-book-open text-blue-600"></i></div><h3 class="font-bold text-slate-800 text-sm">Training & Learning Docs</h3></div>
+                            <div onclick="window.open('https://drive.google.com/drive/folders/1L7suqoRAd6XcsROCFj0ukaTRmALZmopG?usp=drive_link', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group border-b-4 border-b-paddleTeal">
+                                <div class="w-10 h-10 bg-paddleTeal/20 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-film text-paddleTeal"></i></div>
                                 <h3 class="font-bold text-slate-800 text-sm">Training & Technical Videos</h3>
                                 <p class="text-xs text-slate-400 mt-1">Training Video Repository</p>
                             </div>
-                            <!-- TILE 4 -->
-                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition-all duration-300 bg-white p-5 rounded-xl shadow-sm hover:shadow-md border border-slate-200 group">
-                                <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-orange-600 transition-colors">
-                                    <i class="fa-solid fa-circle-exclamation text-orange-600 group-hover:text-white transition-colors"></i>
-                                </div>
-                                <h3 class="font-bold text-slate-800 text-sm">Important Documentation</h3>
-                            </div>
-                            <!-- TILE 5 -->
-                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition-all duration-300 bg-white p-5 rounded-xl shadow-sm hover:shadow-md border border-slate-200 group">
-                                <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-purple-600 transition-colors">
-                                    <i class="fa-solid fa-trophy text-purple-600 group-hover:text-white transition-colors"></i>
-                                </div>
-                                <h3 class="font-bold text-slate-800 text-sm">Detailed ADF</h3>
-                            </div>
+                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group"><div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-circle-exclamation text-orange-600"></i></div><h3 class="font-bold text-slate-800 text-sm">Important Documentation</h3></div>
+                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group"><div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-trophy text-purple-600"></i></div><h3 class="font-bold text-slate-800 text-sm">Detailed ADF</h3></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- =========================
-                     SECTION 4: COLLAPSIBLE
-                     ========================= -->
+                <!-- Slalom Section 4 -->
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-                    <button onclick="toggleSection('section-4', 'icon-4')" class="w-full px-6 py-5 flex items-center justify-between bg-white hover:bg-slate-50 transition-colors text-left group">
-                        <div class="flex items-center">
-                            <div class="w-10 h-10 rounded-full bg-paddleNavy/10 flex items-center justify-center mr-4 text-paddleNavy font-bold">4</div>
-                            <h2 class="text-xl font-bold text-paddleNavy group-hover:text-paddleTeal transition-colors">Paddle to Win</h2>
-                        </div>
-                        <i id="icon-4" class="fa-solid fa-chevron-down text-gray-400 accordion-icon"></i>
+                    <button onclick="toggleSection('slalom-4', 'icon-s4')" class="w-full px-6 py-5 flex items-center justify-between bg-white hover:bg-slate-50 transition text-left group">
+                        <div class="flex items-center"><div class="w-10 h-10 rounded-full bg-paddleNavy/10 flex items-center justify-center mr-4 text-paddleNavy font-bold">4</div><h2 class="text-xl font-bold text-paddleNavy">Paddle to Win</h2></div>
+                        <i id="icon-s4" class="fa-solid fa-chevron-down text-gray-400 accordion-icon"></i>
                     </button>
-                    
-                    <div id="section-4" class="hidden border-t border-slate-100 p-6 bg-slate-50/50">
+                    <div id="slalom-4" class="hidden border-t border-slate-100 p-6 bg-slate-50/50">
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                             <!-- TILE 1 -->
-                             <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition-all duration-300 bg-white p-5 rounded-xl shadow-sm hover:shadow-md border border-slate-200 group">
-                                <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-red-600 transition-colors">
-                                    <i class="fa-solid fa-video text-red-600 group-hover:text-white transition-colors"></i>
-                                </div>
-                                <h3 class="font-bold text-slate-800 text-sm">Webinars</h3>
-                            </div>
-                            <!-- TILE 2 -->
-                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition-all duration-300 bg-white p-5 rounded-xl shadow-sm hover:shadow-md border border-slate-200 group">
-                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-blue-600 transition-colors">
-                                    <i class="fa-solid fa-book-open text-blue-600 group-hover:text-white transition-colors"></i>
-                                </div>
-                                <h3 class="font-bold text-slate-800 text-sm">Training & Learning Docs</h3>
-                            </div>
-                            <!-- TILE 3 (Active) -->
-                            <div onclick="window.open('https://drive.google.com/drive/folders/1L7suqoRAd6XcsROCFj0ukaTRmALZmopG?usp=drive_link', '_blank')" class="cursor-pointer hover:-translate-y-1 transition-all duration-300 bg-white p-5 rounded-xl shadow-sm hover:shadow-md border border-slate-200 group border-b-4 border-b-paddleTeal">
-                                <div class="w-10 h-10 bg-paddleTeal/20 rounded-lg flex items-center justify-center mb-3 group-hover:bg-paddleTeal transition-colors">
-                                    <i class="fa-solid fa-film text-paddleTeal group-hover:text-white transition-colors"></i>
-                                </div>
+                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group"><div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-video text-red-600"></i></div><h3 class="font-bold text-slate-800 text-sm">Webinars</h3></div>
+                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group"><div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-book-open text-blue-600"></i></div><h3 class="font-bold text-slate-800 text-sm">Training & Learning Docs</h3></div>
+                            <div onclick="window.open('https://drive.google.com/drive/folders/1L7suqoRAd6XcsROCFj0ukaTRmALZmopG?usp=drive_link', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group border-b-4 border-b-paddleTeal">
+                                <div class="w-10 h-10 bg-paddleTeal/20 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-film text-paddleTeal"></i></div>
                                 <h3 class="font-bold text-slate-800 text-sm">Training & Technical Videos</h3>
                                 <p class="text-xs text-slate-400 mt-1">Training Video Repository</p>
                             </div>
-                            <!-- TILE 4 -->
-                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition-all duration-300 bg-white p-5 rounded-xl shadow-sm hover:shadow-md border border-slate-200 group">
-                                <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-orange-600 transition-colors">
-                                    <i class="fa-solid fa-circle-exclamation text-orange-600 group-hover:text-white transition-colors"></i>
-                                </div>
-                                <h3 class="font-bold text-slate-800 text-sm">Important Documentation</h3>
-                            </div>
-                            <!-- TILE 5 -->
-                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition-all duration-300 bg-white p-5 rounded-xl shadow-sm hover:shadow-md border border-slate-200 group">
-                                <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-purple-600 transition-colors">
-                                    <i class="fa-solid fa-trophy text-purple-600 group-hover:text-white transition-colors"></i>
-                                </div>
-                                <h3 class="font-bold text-slate-800 text-sm">Detailed ADF</h3>
-                            </div>
+                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group"><div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-circle-exclamation text-orange-600"></i></div><h3 class="font-bold text-slate-800 text-sm">Important Documentation</h3></div>
+                            <div onclick="window.open('#', '_blank')" class="cursor-pointer hover:-translate-y-1 transition bg-white p-5 rounded-xl shadow-sm border border-slate-200 group"><div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-trophy text-purple-600"></i></div><h3 class="font-bold text-slate-800 text-sm">Detailed ADF</h3></div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </main>
+        <footer class="bg-white border-t border-slate-200 py-8 text-center"><p class="text-slate-400 text-sm">&copy; 2025 Paddle Australia - Canoe Slalom ADF Resource Hub.</p></footer>
+    </div>
 
-        <footer class="bg-white border-t border-slate-200 py-8 text-center">
-            <p class="text-slate-400 text-sm">&copy; 2025 Paddle Australia - Canoe Slalom ADF Resource Hub. All rights reserved.</p>
-        </footer>
+    <!-- ==================== 
+         VIEW 4: SPRINT DASHBOARD (New Placeholder)
+         ==================== -->
+    <div id="dashboard-sprint" class="hidden min-h-screen flex flex-col bg-slate-50">
+        <nav class="bg-white shadow-md sticky top-0 z-40 border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-20">
+                    <div class="flex items-center">
+                        <img src="https://raw.githubusercontent.com/NickPez36/Paddle-ADF/main/assets/Paddle%20Aus%20Logo.png" alt="Logo" class="h-12 mr-4">
+                        <div class="flex flex-col border-l-2 border-gray-200 pl-4">
+                            <span class="font-bold text-paddleNavy text-lg leading-tight">Canoe Sprint</span>
+                            <span class="text-sm text-paddleTeal font-medium tracking-wide">ADF Hub</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <button onclick="returnToHub()" class="text-paddleNavy hover:text-paddleTeal text-sm font-bold px-3 py-2 border border-slate-200 rounded-lg hover:bg-slate-50 transition">Switch Hub</button>
+                        <button onclick="handleLogout()" class="text-gray-500 hover:text-red-600 px-3 py-2"><i class="fa-solid fa-right-from-bracket text-xl"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="flex-grow p-4 md:p-8 fade-in">
+            <div class="max-w-7xl mx-auto space-y-6">
+                <div class="text-center py-6"><h1 class="text-3xl font-bold text-paddleNavy">Sprint Resource Library</h1><p class="text-slate-500 mt-2">Content Coming Soon</p></div>
+                <!-- Placeholders for Sprint Sections -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-8 text-center text-gray-400">
+                    <i class="fa-solid fa-person-paddling text-4xl mb-4 text-paddleTeal opacity-50"></i>
+                    <p>This dashboard is ready for content.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- ==================== 
+         VIEW 5: PARA DASHBOARD (New Placeholder)
+         ==================== -->
+    <div id="dashboard-para" class="hidden min-h-screen flex flex-col bg-slate-50">
+        <nav class="bg-white shadow-md sticky top-0 z-40 border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-20">
+                    <div class="flex items-center">
+                        <img src="https://raw.githubusercontent.com/NickPez36/Paddle-ADF/main/assets/Paddle%20Aus%20Logo.png" alt="Logo" class="h-12 mr-4">
+                        <div class="flex flex-col border-l-2 border-gray-200 pl-4">
+                            <span class="font-bold text-paddleNavy text-lg leading-tight">Para Canoe</span>
+                            <span class="text-sm text-paddleTeal font-medium tracking-wide">ADF Hub</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <button onclick="returnToHub()" class="text-paddleNavy hover:text-paddleTeal text-sm font-bold px-3 py-2 border border-slate-200 rounded-lg hover:bg-slate-50 transition">Switch Hub</button>
+                        <button onclick="handleLogout()" class="text-gray-500 hover:text-red-600 px-3 py-2"><i class="fa-solid fa-right-from-bracket text-xl"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="flex-grow p-4 md:p-8 fade-in">
+            <div class="max-w-7xl mx-auto space-y-6">
+                <div class="text-center py-6"><h1 class="text-3xl font-bold text-paddleNavy">Para Resource Library</h1><p class="text-slate-500 mt-2">Content Coming Soon</p></div>
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-8 text-center text-gray-400">
+                    <i class="fa-brands fa-accessible-icon text-4xl mb-4 text-paddleTeal opacity-50"></i>
+                    <p>This dashboard is ready for content.</p>
+                </div>
+            </div>
+        </main>
     </div>
 
     <!-- ==================== 
@@ -374,10 +334,17 @@
          ==================== -->
     <script>
         const loginView = document.getElementById('login-view');
-        const dashboardView = document.getElementById('dashboard-view');
+        const hubSelectionView = document.getElementById('hub-selection-view');
         const loginError = document.getElementById('login-error');
         const usernameInput = document.getElementById('username');
         const passwordInput = document.getElementById('password');
+        
+        // Dashboard Views
+        const dashboards = {
+            slalom: document.getElementById('dashboard-slalom'),
+            sprint: document.getElementById('dashboard-sprint'),
+            para: document.getElementById('dashboard-para')
+        };
 
         // === Login Function ===
         function handleLogin(e) {
@@ -388,11 +355,11 @@
             if (username === 'admin' && password === 'admin') {
                 loginError.classList.add('hidden');
                 loginView.style.opacity = '0';
-                loginView.style.transition = 'opacity 0.3s ease';
                 setTimeout(() => {
                     loginView.classList.add('hidden');
-                    dashboardView.classList.remove('hidden');
-                    dashboardView.classList.add('fade-in');
+                    // Show Hub Selection instead of straight to dashboard
+                    hubSelectionView.classList.remove('hidden');
+                    hubSelectionView.classList.add('fade-in');
                 }, 300);
             } else {
                 loginError.classList.remove('hidden');
@@ -401,9 +368,30 @@
             }
         }
 
+        // === Open Specific Dashboard ===
+        function openDashboard(type) {
+            hubSelectionView.classList.add('hidden');
+            Object.values(dashboards).forEach(el => el.classList.add('hidden'));
+            
+            if(dashboards[type]) {
+                dashboards[type].classList.remove('hidden');
+                dashboards[type].classList.add('fade-in');
+                window.scrollTo(0,0);
+            }
+        }
+
+        // === Return to Hub Selection ===
+        function returnToHub() {
+            Object.values(dashboards).forEach(el => el.classList.add('hidden'));
+            hubSelectionView.classList.remove('hidden');
+            hubSelectionView.classList.add('fade-in');
+        }
+
         // === Logout Function ===
         function handleLogout() {
-            dashboardView.classList.add('hidden');
+            hubSelectionView.classList.add('hidden');
+            Object.values(dashboards).forEach(el => el.classList.add('hidden'));
+            
             loginView.classList.remove('hidden');
             loginView.style.opacity = '1';
             usernameInput.value = '';
@@ -416,7 +404,6 @@
             const section = document.getElementById(sectionId);
             const icon = document.getElementById(iconId);
             
-            // Toggle Visibility
             if (section.classList.contains('hidden')) {
                 section.classList.remove('hidden');
                 section.classList.add('fade-in');
